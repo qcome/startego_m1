@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="maFenetre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.FenetrePrincipale">
+   <top>
+      <Text fill="#09b6bc" strokeType="OUTSIDE" strokeWidth="0.0" text="STRATEGO" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="BadaBoom BB" size="48.0" />
+         </font>
+      </Text>
+   </top>
+</BorderPane>

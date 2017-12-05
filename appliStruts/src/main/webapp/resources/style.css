@@ -1,0 +1,411 @@
+h3
+{
+	text-align: center;
+	font-family: "BadaBoom BB";
+	padding-left: 40px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+p
+{
+	font-weight: 300;
+	font-size: 1.3em;
+	display: inline-block;
+	text-align : justify;
+	color: #2C3E50;
+}
+
+.connexion-button {
+	margin-left: 62px;
+	float: none !important;
+	margin-top: 27px;
+	background-color: #09b6bc;
+	border: none;
+	width: 130px;
+}
+
+.center-block{
+
+	float: none !important;
+	background-color: #09b6bc;
+	border: none;
+	width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.decline-button{
+
+    float: none !important;
+    background-color: indianred;
+    border: none;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.deconnexion-button{
+
+	margin-left: 15px;
+	float: none !important;
+	margin-top: 27px;
+	background-color: indianred;
+	border: none;
+	width: 130px;
+
+}
+
+.creation-partie{
+    margin-top: 60px;
+
+}
+.TitreIndex{
+	text-align: center;
+	font-family: 'Lobster Two', sans-serif;
+	color:#2C3E50;
+}
+
+.BienvenueText
+{
+	margin-top: 120px;
+}
+
+.jumbotron-fluid
+{
+	background-color: transparent;
+}
+
+#imgIntro
+{
+	display:block;
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#indexIntro
+{
+	margin-top: 40px;
+}
+
+.lead
+{
+	margin-top: 30px;
+	color: white;
+	font-size: large;
+	text-align: justify;
+}
+
+#errorConnexion
+{
+	width: 280px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+#errorRegistration
+{
+	width: 280px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+#formConnex
+{
+	width: 700px;
+	height: 550px;
+	background-color: rgba(52, 73, 94,0.40);
+
+	border-radius:15px;
+	margin-bottom: 150px;
+	margin-top: 120px;
+}
+
+#formInscription{
+
+	width: 700px;
+	height: 550px;
+	background-color: rgba(52, 73, 94,0.40);
+
+	border-radius:15px;
+	margin-bottom: 50px;
+	margin-top: 120px;
+
+}
+
+#user
+{
+	height:120px;
+	width:120px;
+	margin-top: -17px;
+	margin-bottom: 10px;
+	margin-left: 300px;
+
+}
+
+#userMenu
+{
+	margin-left: 60px;
+
+}
+
+#inputIndex
+{
+	height:45px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF ;
+	margin-left: -30px;
+    margin-top: 30px;
+}
+
+#inputIndex1
+{
+	height:45px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF ;
+	padding-left: 15px;
+	margin-left: -30px;
+	margin-top: 30px;
+
+}
+
+#inputIndex2
+{
+	height:45px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF ;
+	padding-left: 15px;
+	margin-left: -30px;
+	margin-top: 30px;
+
+}
+
+#inputIndex3
+{
+	height:45px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF ;
+	padding-left: 15px;
+	margin-left: -30px;
+
+}
+
+#inputIndex4
+{
+	height:45px;
+	width:300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF ;
+	padding-left: 15px;
+	margin-left: -30px;
+
+}
+
+iframe
+{
+	border-top: 2px;
+	border-color: white;
+}
+
+#thumbnail1
+{
+	margin-top: 100px;
+}
+
+.jumbotron
+{
+	margin-top: 60px;
+	background-color: #F7F9FF;
+}
+
+.carousel
+{
+	width:640px;
+	height:360px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.carousel-inner > .item > img
+{
+	width:640px;
+	height:360px;
+}
+
+#well
+{
+	background-color: rgba(52, 73, 94,0.40);
+	border-radius:15px;
+	margin-top: 60px;
+	color: #FFFFFF;
+	font-family: 'Helvetica';
+	border: 0px solid;
+}
+
+#jumbotron
+{
+	background-color: rgba(52, 73, 94,0.40);
+	border-radius:15px;
+	color: #FFFFFF;
+	font-family: 'BadaBoom BB';
+	font-size: larger;
+	font-style: inherit;
+}
+
+#gameState
+{
+	background-color: rgba(52, 73, 94,0.40);
+	border-radius:15px;
+	color: #FFFFFF;
+	font-family: 'BadaBoom BB';
+	font-size: larger;
+	font-style: inherit;
+}
+
+#myInvits
+{
+	background-color: rgba(52, 73, 94,0.40);
+	border-radius:15px;
+	color: #FFFFFF;
+	font-size: larger;
+	font-style: inherit;
+	margin-top: 100px;
+}
+
+#divJoinGame
+{
+	background-color: rgba(52, 73, 94,0.40);
+	border-radius:15px;
+	color: #FFFFFF;
+	font-size: larger;
+	font-style: inherit;
+	margin-top:55px;
+
+}
+
+#selectPlayer
+{
+	height: 143px;
+}
+
+#onlinePlayers
+{
+	background-color: rgba(52, 73, 94,0.40);
+	border-radius:15px;
+	color: #FFFFFF;
+	font-size: larger;
+	font-style: inherit;
+	margin-left: 100px;
+	margin-top:60px;
+}
+
+#spectatorMode
+{
+	background-color: rgba(52, 73, 94, 0.30);
+	border-radius: 15px;
+	border: 0px solid;
+	margin-top: 100px;
+}
+
+#gameForm
+{
+	background-color: rgba(52, 73, 94,0.40) ;
+	border-radius:15px;
+	border: 0px solid;
+    margin-top: 60px;
+}
+
+.form-group
+{
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.form-group1
+{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 125px;
+}
+
+.navbar .navbar-default
+{
+	background-color: #7c84ff;
+	border-color: #ff9629;
+	color: red;
+	margin-bottom: 100px;
+}
+
+.navbar-brand
+{
+	font-family: "BadaBoom BB";
+	color: #09b6bc;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+.navbar-default .navbar-brand
+{
+	color: #09b6bc;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus
+{
+	color: #f54b3e;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav> .active >a,
+.navbar-default .navbar-nav> .active > a:hover,
+.navbar-default .navbar-nav> .active > a:focus
+{
+	color: #09b6bc;
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav> li > a:hover,
+.navbar-default .navbar-nav> li > a:focus
+{
+	color: #18BC9C;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav> li > a
+{
+	color: #322f32;
+}
+
+#boutonindex
+{
+	margin-bottom: 80px;
+}
+
+
+body
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	background-image: url("../resources/images/background1.jpg")
+}
+
+@font-face
+{
+	font-family: 'BadaBoom BB';
+	font-style: normal;
+	font-weight: normal;
+	src: local('BadaBoom BB'), url('../resources/fonts/BADABB__.woff') format('woff');
+}

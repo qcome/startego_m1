@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+
+    <include file="example.xml"/>
+
+    <package name="json" namespace="/" extends="json-default">
+
+        <interceptors>
+            <interceptor name="json" class="org.apache.struts2.json.JSONInterceptor"/>
+        </interceptors>
+
+        <action name="registration" class="actions.Inscription">
+            <result type="json"/>
+        </action>
+
+        <action name="declineInvitation" class="actions.Menu" method="declineInvitation">
+            <result type="json"/>
+        </action>
+
+        <action name="sendInvitation" class="actions.Partie" method="sendInvitation">
+            <result type="json"/>
+        </action>
+
+        <action name="putPiece" class="actions.Partie" method="putPiece">
+            <result type="json"/>
+            <result name="error" type="json"/>
+        </action>
+
+        <action name="movePiece" class="actions.Partie" method="movePiece">
+            <result type="json"/>
+            <result name="error" type="json"/>
+        </action>
+
+        <action name="refreshMenu" class="actions.Menu" method="refreshMenu">
+            <result type="json"/>
+        </action>
+
+        <action name="refreshGame" class="actions.Partie" method="refreshGame">
+            <result type="json"/>
+            <result name="error" type="json"/>
+        </action>
+
+        <action name="skipTurn" class="actions.Partie" method="skipTurn">
+            <result type="json"/>
+            <result name="error" type="json"/>
+        </action>
+
+    </package>
+
+    <package name="default" namespace="/" extends="struts-default, json">
+        <interceptors>
+            <interceptor class="interceptors.LoginInterceptor" name="loginInterceptor">
+            </interceptor>
+            <interceptor-stack name="loginStack">
+                <interceptor-ref name="defaultStack" />
+                <interceptor-ref name="loginInterceptor" />
+            </interceptor-stack>
+        </interceptors>
+
+        <default-action-ref name="connexion"/>
+
+        <action name="connexion">
+            <result>/WEB-INF/Connexion.jsp</result>
+        </action>
+
+        <action name="disconnection" class="actions.Deconnexion">
+            <result>/WEB-INF/Connexion.jsp</result>
+        </action>
+
+        <action name="menu" class="actions.Connexion">
+            <result name="success">/WEB-INF/Menu.jsp</result>
+            <result name="error">/WEB-INF/Connexion.jsp</result>
+        </action>
+
+        <action name="game" class="actions.Menu">
+            <interceptor-ref name="loginStack" />
+            <result name="success" type="chain">createGame</result>
+            <result name="noSelection">/WEB-INF/Menu.jsp</result>
+            <result name="login">/WEB-INF/Connexion.jsp</result>
+        </action>
+
+        <action name="createGame" class="actions.Menu" method="createGame">
+            <result>/WEB-INF/Partie.jsp</result>
+        </action>
+
+        <action name="joinGame" class="actions.Menu" method="joinGame">
+            <interceptor-ref name="loginStack" />
+            <result>/WEB-INF/Partie.jsp</result>
+            <result name="noSelection">/WEB-INF/Menu.jsp</result>
+            <result name="login">/WEB-INF/Connexion.jsp</result>
+        </action>
+
+        <action name="leaveGame" class="actions.Partie" method="leaveGame">
+            <interceptor-ref name="loginStack" />
+            <result>/WEB-INF/Menu.jsp</result>
+            <result name="login">/WEB-INF/Connexion.jsp</result>
+        </action>
+
+        <action name="acceptInvitation" class="actions.Menu" method="acceptInvitation">
+            <interceptor-ref name="loginStack" />
+            <result>/WEB-INF/Partie.jsp</result>
+            <result name="gameAlreadyBegun">/WEB-INF/Menu.jsp</result>
+            <result name="login">/WEB-INF/Connexion.jsp</result>
+        </action>
+
+    </package>
+
+    <!-- Add addition packages and configuration here. -->
+</struts>
